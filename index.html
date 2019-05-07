@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        function Change(){
+          document.getElementById("colorchange").style.color="blue"
+        }
+        
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>My Portfolio</title>
 </head>
@@ -58,9 +64,8 @@
   </div>
   <div class="change that color">
 
-    <h5>Change the color of this title</h5>
-    <button type="button" onclick="document.getElementsByTagName('h5').style.color= 'red'">
-    Change color</button>
+    <h5 id="colorchange">Change the color of this title</h5>
+    <button type="button" onclick="Change()">Change color</button>
 
   </div>
 
